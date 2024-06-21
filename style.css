@@ -15,7 +15,7 @@ body {
     flex-flow: column nowrap;
     gap: 5rem;
     min-width: 375px;
-    max-width: 100vw;
+    width: 100%;
 }
 
 
@@ -44,7 +44,7 @@ input {
 .dashboard {
     background: url('images/bg-hero-desktop.svg'), hsl(191, 89%, 96%);
     background-size: 100%;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -52,7 +52,7 @@ input {
 }
 /* -> Header */
 header {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +60,7 @@ header {
 }
 /* // Header */
 .flex_row {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
