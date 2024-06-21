@@ -185,7 +185,7 @@ footer {
 }
 .footer_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
     grid-auto-rows: 40px;
     place-items: center center;
     gap: 1rem;
@@ -244,6 +244,19 @@ header input:hover {
 }
 
 
+.footer_grid > p {
+    transition: letter-spacing 0.3s ease;
+}
+
+.social_links > img:hover {
+    cursor: pointer;
+    
+}
+.footer_grid > p:hover {
+    cursor: pointer;
+    letter-spacing: 3px;
+    color: lightgray;
+}
 
 
 
