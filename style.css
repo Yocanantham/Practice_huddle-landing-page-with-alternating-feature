@@ -338,6 +338,7 @@ margin: 0rem 0rem 5rem 0rem;
         position: unset;
     }
     header {
+justify-content: center;
     padding: 3rem 1rem;
 }
 }
