@@ -331,9 +331,10 @@ margin: 0rem 0rem 5rem 0rem;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1.5rem;
+gap: 1.5rem;
     }
     header img { 
         align-self: flex-start;
