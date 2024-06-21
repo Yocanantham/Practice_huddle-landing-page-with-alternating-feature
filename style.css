@@ -336,7 +336,9 @@ margin: 0rem 0rem 5rem 0rem;
     .copyright {
         position: unset;
     }
-    
+    header {
+    padding: 3rem 1rem;
+}
 }
 
 @media screen and (max-width: 500px) {
