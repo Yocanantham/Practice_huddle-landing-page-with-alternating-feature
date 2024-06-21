@@ -341,6 +341,11 @@ margin: 0rem 0rem 5rem 0rem;
 justify-content: center;
     padding: 3rem 1rem;
 }
+header input {
+    justify-self: center;
+align-self: center;
+text-align: center;
+}
 }
 
 @media screen and (max-width: 500px) {
