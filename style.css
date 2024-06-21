@@ -276,6 +276,10 @@ header input:hover {
         justify-content: center;
         text-align: center;
     }
+main{
+        padding: 1.5rem;
+    }
+
     .card {
         padding: 3rem;
     }
