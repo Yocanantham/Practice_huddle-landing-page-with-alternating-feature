@@ -54,7 +54,7 @@ input {
 header {
     width: 100%;
     display: flex;
-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
@@ -327,6 +327,17 @@ margin: 0rem 0rem 5rem 0rem;
     .copyright {
         position: unset;
     }
+    header {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    }
+    header img { 
+        align-self: flex-start;
+    } 
 }
 
 @media screen and (max-width: 500px) {
