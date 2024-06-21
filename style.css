@@ -59,6 +59,15 @@ header {
     align-items: center;
     padding: 3rem;
 }
+header img{
+    max-width: 45%;
+    flex: 1 1;
+}
+header input {
+    max-width: 45%;
+    flex: 1 1;
+}
+
 /* // Header */
 .flex_row {
     width: 100%;
@@ -327,18 +336,7 @@ margin: 0rem 0rem 5rem 0rem;
     .copyright {
         position: unset;
     }
-    header {
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-gap: 1.5rem;
-    }
-    header img { 
-        align-self: flex-start;
-    } 
+    
 }
 
 @media screen and (max-width: 500px) {
