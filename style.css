@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* -> CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* // CSS reset */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5rem;
+    min-width: 375px;
+    max-width: 100vw;
+}
+
+
+
+/* -> CSS Utilities */
+h1, h2 {
+    font-family: "Poppins", sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+p {
+  color: hsl(208, 11%, 55%);
+  font-weight: 500;  
+}
+img {
+    display: block;
+}
+input {
+    display: block;
+    font-family: inherit;
+}
+/* // CSS Utilities */
+
+
+
+/* ! Dashboard */
+.dashboard {
+    background: url('images/bg-hero-desktop.svg'), hsl(191, 89%, 96%);
+    background-size: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 3rem;
+}
+/* -> Header */
+header {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+/* // Header */
+.flex_row {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 3rem;
+}
+
+.dashboard_summary {
+    flex: 1 1 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.4rem;
+    padding: 2.4rem;
+}
+.dashboard_summary > p {
+    color: hsl(210, 16%, 53%);
+    font-weight: 600;
+}
+.dashboard_summary > input {
+    padding: 1rem 3rem;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(322, 100%, 66%);
+    border: 0px solid transparent;
+    border-radius: 35px;
+}
+.flex_row  img {
+    width: 100%;
+    flex: 1 1 300px;
+    max-width: 900px;
+}
+
+
+/* ! Card */
+main {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.4rem;
+}
+.card {
+    padding: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    box-shadow: 3px 3px 35px hsl(208, 11%, 55%);
+    border-radius: 15px;
+}
+
+.card .main_content {
+    font-size: x-large;
+    flex: 1.5 1 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.card img {
+    width: 100%;
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+.card_wrap_reverse {
+    flex-wrap: wrap-reverse;
+}
+
+/* ! Footer Card */
+.footer_card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.4rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px lightgray;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -6rem;
+    background-color: white;
+    text-wrap: nowrap;
+}
+.footer_card > h1 {
+    width: 100%;
+    font-size: larger;
+}
+.footer_card > input {
+    padding: 1rem 3rem;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(322, 100%, 66%);
+    border: 0px solid transparent;
+    border-radius: 35px;
+}
+/* // Footer Card */
+footer p, .copyright {
+    color: white;
+}
+footer {
+    position: relative;
+    padding: 9rem 3rem 5rem 3rem;
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 3rem;
+}
+.footer_flex {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 300px;
+}
+.footer_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 40px;
+    place-items: center center;
+    gap: 1rem;
+    flex: 1 1 199px;
+    text-align: center;
+}
+.social_links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 100px;
+}
+.footer_flex .row:first-child > img {
+    padding-top: 3px;
+    align-self: baseline;
+}
+.footer_flex .row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.copyright {
+    position: absolute;
+    bottom : 15px;
+    right: 15px;
+    text-align: center;
+}
+
+input {
+    transition: transform 0.9s ease, color 0.5s ease, letter-spacing 0.74s ease, font-weight 0.5s ease, font-size 0.5s ease;
+}
+input:hover {
+    opacity: 0.85;
+    cursor: pointer;
+    transform: translate(0px, -5px);
+    color: rgba(0, 0, 0, 0.85);
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    font-size: 0.924rem;
+    box-shadow: 0px 3px 24px hsl(322, 100%, 66%);
+}
+
+header input {
+    padding: 1rem 3rem;
+    color: hsl(192, 100%, 9%);
+    font-weight: 700;
+    background-color: white;
+    border: 0px solid transparent;
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px lightgrey;
+}
+header input:hover {
+    box-shadow: 0px 3px 15px rgba(128, 128, 128, 0.5);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 769px) {
+    .dashboard_summary {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .card {
+        padding: 3rem;
+    }
+    .card .main_content {
+        font-size: larger;
+        align-items: center;
+        text-align: center;
+    }
+    .footer_card > h1 {
+        font-size: smaller;
+    }
+    footer {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .footer_flex {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        gap: 1rem;
+        flex: 1 1 ;
+    }
+    .footer_grid {
+        width: 100%;
+        flex: 1 1 ;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px;
+        place-items: center top;
+        gap: 1rem;
+        text-align: center;
+        
+    }
+    .social_links {
+        width: 55%;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+        flex: 1 1 ;
+    }
+    .copyright {
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dashboard {
+        background: url('images/bg-hero-mobile.svg'), hsl(193, 100%, 96%);
+    }
+    .card .main_content {
+        font-size: medium;
+    }
+    .footer_card > h1 {
+        font-size: small;
+    }
+    footer {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
