@@ -60,7 +60,7 @@ header {
     padding: 3rem;
 }
 header img{
-    max-width: 45%;
+    align-self: flex-start;
     flex: 1 1;
 }
 header input {
