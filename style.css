@@ -58,6 +58,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
+gap: 3rem;
 }
 header img{
     align-self: flex-start;
