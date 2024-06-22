@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* -> CSS reset */
 * {
@@ -18,16 +19,15 @@ body {
     width: 100%;
 }
 
-
-
 /* -> CSS Utilities */
-h1, h2 {
+h1,
+h2 {
     font-family: "Poppins", sans-serif;
     color: hsl(192, 100%, 9%);
 }
 p {
-  color: hsl(208, 11%, 55%);
-  font-weight: 500;  
+    color: hsl(208, 11%, 55%);
+    font-weight: 500;
 }
 img {
     display: block;
@@ -38,11 +38,9 @@ input {
 }
 /* // CSS Utilities */
 
-
-
 /* ! Dashboard */
 .dashboard {
-    background: url('images/bg-hero-desktop.svg'), hsl(191, 89%, 96%);
+    background: url("images/bg-hero-desktop.svg"), hsl(191, 89%, 96%);
     background-size: 100%;
     width: 100%;
     display: flex;
@@ -54,19 +52,19 @@ input {
 header {
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
-gap: 3rem;
+    gap: 1.5rem;
 }
-header img{
+header img {
     align-self: flex-start;
-    flex: 1 1;
+    flex: 1 1.5;
+    max-width: 400px;
 }
 header input {
     text-align: center;
-    
 }
 
 /* // Header */
@@ -101,12 +99,11 @@ header input {
     border: 0px solid transparent;
     border-radius: 35px;
 }
-.flex_row  img {
+.flex_row img {
     width: 100%;
     flex: 1 1 300px;
     max-width: 900px;
 }
-
 
 /* ! Card */
 main {
@@ -174,7 +171,8 @@ main {
     border-radius: 35px;
 }
 /* // Footer Card */
-footer p, .copyright {
+footer p,
+.copyright {
     color: white;
 }
 footer {
@@ -221,13 +219,14 @@ footer {
 }
 .copyright {
     position: absolute;
-    bottom : 15px;
+    bottom: 15px;
     right: 15px;
     text-align: center;
 }
 
 input {
-    transition: transform 0.9s ease, color 0.5s ease, letter-spacing 0.74s ease, font-weight 0.5s ease, font-size 0.5s ease;
+    transition: transform 0.9s ease, color 0.5s ease, letter-spacing 0.74s ease,
+        font-weight 0.5s ease, font-size 0.5s ease;
 }
 input:hover {
     opacity: 0.85;
@@ -254,14 +253,12 @@ header input:hover {
     color: black;
 }
 
-
 .footer_grid > p {
     transition: letter-spacing 0.3s ease;
 }
 
 .social_links > img:hover {
     cursor: pointer;
-    
 }
 .footer_grid > p:hover {
     cursor: pointer;
@@ -269,27 +266,15 @@ header input:hover {
     color: lightgray;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 769px) {
     .dashboard_summary {
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-main{
+    main {
         padding: 1.5rem;
-margin: 0rem 0rem 5rem 0rem;
+        margin: 0rem 0rem 5rem 0rem;
     }
 
     .card {
@@ -313,18 +298,17 @@ margin: 0rem 0rem 5rem 0rem;
         flex-flow: column nowrap;
         align-items: flex-start;
         gap: 1rem;
-        flex: 1 1 ;
+        flex: 1 1;
     }
     .footer_grid {
         width: 100%;
-        flex: 1 1 ;
+        flex: 1 1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px;
         place-items: center top;
         gap: 1rem;
         text-align: center;
-        
     }
     .social_links {
         width: 55%;
@@ -332,25 +316,26 @@ margin: 0rem 0rem 5rem 0rem;
         gap: 1rem;
         justify-content: space-evenly;
         align-items: center;
-        flex: 1 1 ;
+        flex: 1 1;
     }
     .copyright {
         position: unset;
     }
     header {
-justify-content: center;
-    padding: 3rem 1rem;
-}
-header input {
-    justify-self: center;
-align-self: center;
-text-align: center;
-}
+        padding: 3rem 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    header input {
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .dashboard {
-        background: url('images/bg-hero-mobile.svg'), hsl(193, 100%, 96%);
+        background: url("images/bg-hero-mobile.svg"), hsl(193, 100%, 96%);
     }
     .card .main_content {
         font-size: medium;
@@ -361,5 +346,12 @@ text-align: center;
     footer {
         flex-flow: column nowrap;
         align-items: center;
+    }
+    header {
+        justify-content: space-between;
+    }
+    header > img {
+        max-width: 150px;
+        align-self: center;
     }
 }
