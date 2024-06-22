@@ -354,4 +354,11 @@ header input:hover {
         max-width: 150px;
         align-self: center;
     }
+    header > input {
+        font-size: small;
+        padding: 0.65rem 3rem;
+    }
+    header > input:hover {
+        transform: unset;
+    }
 }
